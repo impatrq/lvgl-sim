@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",              // common C/C++ support
+        "ms-vscode.cpptools-themes",       // general C/C++ theme
+        "ms-vscode.cmake-tools"            // cmake support
+    ],
+    "unwantedRecommendations": [
+    ]
+}
