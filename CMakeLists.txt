@@ -197,3 +197,6 @@ else()
     message(STATUS "AddressSanitizer disabled")
 endif()
 endif()
+
+add_subdirectory(projects)
+target_link_libraries(main projects)
