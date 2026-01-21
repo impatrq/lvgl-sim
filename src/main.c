@@ -26,6 +26,8 @@
 
 #include "hal/hal.h"
 
+#include "projects.h"
+
 /*********************
  *      DEFINES
  *********************/
@@ -61,7 +63,7 @@ int main(int argc, char **argv)
   lv_init();
 
   /*Initialize the HAL (display, input devices, tick) for LVGL*/
-  sdl_hal_init(320, 480);
+  sdl_hal_init(480, 320);
 
   /* Run the default demo */
   /* To try a different demo or example, replace this with one of: */
@@ -69,7 +71,7 @@ int main(int argc, char **argv)
   /* - lv_demo_stress(); */
   /* - lv_example_label_1(); */
   /* - etc. */
-  lv_demo_widgets();
+  ui_fft_chart();
 
   while(1) {
     /* Periodically call the lv_task handler.
@@ -94,4 +96,3 @@ int main(int argc, char **argv)
 /**********************
  *   STATIC FUNCTIONS
  **********************/
-

@@ -3,5 +3,6 @@
 
 // Definir prototipos de funciones para cada proyecto
 
+void ui_fft_chart(void);
 
 #endif
